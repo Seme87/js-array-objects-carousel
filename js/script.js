@@ -24,12 +24,29 @@ const images = [
     }
 ];
 
-const container= document.querySelector("container");
+const container= document.querySelector(".container");
 const template= document.getElementById("template-item").content.cloneNode(true);
+const cardImg= template.querySelector(".items-img-card ");
+const btnOver= template.querySelector(".btn-over");
+const imgHtml= document.createElement("img");
 console.log(template)
 
 for(let i= 0; i < images.length; i++){
-    const image= images[i];
+    const imageArray= images[i];
+    if(i===0){
+        cardImg.classList.add("active")
+    }
     
     
+   
+    cardImg.append(imgHtml)
+    
+    btnOver.addEventListener("click", function(){
+        cardImg.classList.add("active")
+        imgHtml.src= imageArray.image;
+    })
+    
+
+
+    container.append(template);
 } 
