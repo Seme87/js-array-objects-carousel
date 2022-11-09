@@ -24,9 +24,12 @@ const images = [
     }
 ];
 
+const container= document.querySelector("container");
+const template= document.getElementById("template-item").content.cloneNode(true);
+console.log(template)
 
 for(let i= 0; i < images.length; i++){
     const image= images[i];
-    const template= document.getElementById("template-item").content.cloneNode(true);
-    console.log(template)
+    
+    
 } 
