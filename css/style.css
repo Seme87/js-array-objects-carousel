@@ -47,12 +47,19 @@
 
 .title{
     padding: 10px 10px;
-    font-size: .8125rem;
     text-align: right;
     color: white;
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+.title h5{
+    font-size: 1rem;
+}
+
+.title p{
+    font-size: .8125rem;
 }
 
 .items-img-card{
