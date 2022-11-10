@@ -24,17 +24,27 @@ const images = [
     }
 ];
 
+//SALVO IL CONTAINER HTML IN UNA VARIABILE
 const container= document.querySelector(".container");
+//CLONO TEMPLATE DA HTML SU JS
 const template= document.getElementById("template-item").content.cloneNode(true);
+//SELEZIONO IL CONTENITORE DELL'IMMAGINE
 const cardImg= template.querySelector(".items-img-card ");
+//SELEZIONO IL PULSANTE OVER DA HTML
 const btnOver= template.querySelector(".btn-over");
+//CREO L'ELEMENTO IMG
 const imgHtml= document.createElement("img");
+console.log(imgHtml)
+
 console.log(template)
 
 for(let i= 0; i < images.length; i++){
-    const imageArray= images[i];
+    const imageArray= images[i].image;
+   
+    
     if(i===0){
         cardImg.classList.add("active")
+        imgHtml.src= imageArray;
     }
     
     
@@ -43,7 +53,7 @@ for(let i= 0; i < images.length; i++){
     
     btnOver.addEventListener("click", function(){
         cardImg.classList.add("active")
-        imgHtml.src= imageArray.image;
+        
     })
     
 
