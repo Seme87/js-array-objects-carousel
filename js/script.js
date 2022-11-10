@@ -51,10 +51,9 @@ for(let i= 0; i < images.length; i++){
    
     cardImg.append(imgHtml)
     
-    btnOver.addEventListener("click", function(){
-        cardImg.classList.add("active")
-        
-    })
+   btnOver.addEventListener("click", function(){
+    
+   })
     
 
 
