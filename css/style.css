@@ -62,20 +62,23 @@
 }
 
 .items-img-card{
-    display: none;
+    /* display: none; */
     width: 100%;
     height: 100%;
 }
 
 .active{
     display: block;
+    border: 2px solid lightgrey;
 }
+
+/* .item-pre-img:not(.active){
+    filter: grayscale(0.8);
+} */
 
 
 .items-preview{
     position: relative;
-    /* display: flex;
-    flex-direction: column; */
     width:  calc(100% - 80%);
     height: 100%;
     background-color: brown;
@@ -87,6 +90,7 @@
 }
 
 .btn-over, .btn-under{
+    font-size: 20px;
     color: white;
     padding: 10px 0;
     position: absolute;
